@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Karol Szpek - Junior Frontend Developer</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- NAVIGATION BAR-->
+    <div class="navbar" id="navbar">
+      <div class="left">
+          <a href="#header" id="logo">K<span class="mobile-hidden">arol </span>S<span class="mobile-hidden">zpek</span></a>
+      </div>
+      <div class="right">
+          <a href="#projects" class="btn">Projects</a>
+          <a href="#about" class="btn">About</a>
+          <a href="#contact" class="btn">Contact</a>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <div class="header" id="header"></div>
+    
+    <!-- PROJECTS -->
+    <div class="projects" id="projects">
+      <div class="projects-header">
+            <i class="fas fa-code"></i>
+                MY PROJECTS
+            <i class="fas fa-code"></i>
+      </div>
+
+      <div class="row">
+
+          <div class="portfolio-item">
+              <img class="img-fluid" src="img/portfolio/cinema2.png" id="myBtn1" alt="cinema popcorn tape drawing">CINEMA BOOKING
+          </div>
+          
+          <div class="portfolio-item">
+              <img class="img-fluid" src="img/portfolio/weather3.png" id="myBtn2" alt="sun and clouds drawing">WEATHER APP
+          </div>
+
+          <div class="portfolio-item">
+            <img class="img-fluid" src="img/portfolio/pig2.jpg" id="myBtn3" alt="pig drawing">PIG GAME
+          </div>
+
+      </div>
+
+      <div class="row">
+
+          <div class="portfolio-item">
+            <img class="img-fluid" src="img/portfolio/game2.png" id="myBtn4" alt="console pad">CONSOLE QUIZ
+          </div>
+        
+          <div class="portfolio-item">
+            <img class="img-fluid" src="img/portfolio/coding2.jpg" id="myBtn5" alt="computer drawing">MY PORTFOLIO
+          </div>
+
+          <div class="portfolio-item">
+              <a href="https://github.com/karolsz15" target="_blank"><img class="img-fluid" src="img/portfolio/github2.png" id="myBtn6" alt="GitHub logo"></a>MY GITHUB
+          </div>
+      </div>
+    </div>
+
+      <!-- PORTFOLIO MODALS -->
+          <!-- The Modal -->
+          <div id="myModal1" class="modal">
+          
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>CINEMA BOOKING</h1>
+
+              <!-- Gallery -->
+                  <!-- Slideshow container -->
+                  <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides1 fade">
+                      <img class ="modal-img" src="./img/portfolio/cinema2.png">
+                    </div>
+
+                    <div class="mySlides1 fade">
+                      <div class="numbertext">Homepage</div>
+                      <a href="img/portfolio/cinema/screenshot1.png" target="_blank"><img class ="modal-img" src="./img/portfolio/cinema/screenshot1.png"></a>
+                    </div>
+
+                    <div class="mySlides1 fade">
+                      <div class="numbertext">Trailers subpage</div>
+                      <a href="img/portfolio/cinema/screenshot2.png" target="_blank"><img class ="modal-img" src="./img/portfolio/cinema/screenshot2.png"></a>
+                    </div>
+
+                    <div class="mySlides1 fade">
+                      <div class="numbertext">Movie scheldue and booking</div>
+                      <a href="img/portfolio/cinema/screenshot3.png" target="_blank"><img class ="modal-img" src="./img/portfolio/cinema/screenshot3.png"></a>
+                    </div>
+
+                    <div class="mySlides1 fade">
+                      <div class="numbertext">Booking - seats and tickets selection</div>
+                      <a href="img/portfolio/cinema/screenshot5.png" target="_blank"><img class ="modal-img" src="./img/portfolio/cinema/screenshot5.png"></a>
+                    </div>
+
+                    <div class="mySlides1 fade">
+                      <div class="numbertext">Booking - customer's choice confirmation</div>
+                      <a href="img/portfolio/cinema/screenshot6.png" target="_blank"><img class ="modal-img" src="./img/portfolio/cinema/screenshot6.png"></a>
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                  <br>
+
+                  <!-- The dots/circles -->
+                  <div style="text-align:center">
+                    <span class="dot1" onclick="currentSlide(1)"></span>
+                    <span class="dot1" onclick="currentSlide(2)"></span>
+                    <span class="dot1" onclick="currentSlide(3)"></span>
+                    <span class="dot1" onclick="currentSlide(4)"></span>
+                    <span class="dot1" onclick="currentSlide(5)"></span>
+                    <span class="dot1" onclick="currentSlide(6)"></span>
+                  </div> 
+              <!-- END of Gallery -->
+
+              <p> 
+                Cinema booking application including homepage and trailers sub-page. Technologies used include NodeJS, 
+                MongoDB, jQuery, Javascript and Bootstrap.
+              </p>
+              <button class="button" onclick="window.open('https://github.com/karolsz15/cinema-booking/')">Code</button>
+              <button class="button closemodal">Close Window</button>
+            </div>
+          </div> 
+
+          <!-- The Modal -->
+          <div id="myModal2" class="modal">
+          
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>WEATHER FORECAST</h1>
+
+              <!-- Gallery -->
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides2 fade">
+                    <img class ="modal-img" src="./img/portfolio/weather3.png">
+                  </div>
+
+                  <div class="mySlides2 fade">
+                    <div class="numbertext">Weather forecast for searched city</div>
+                    <a href="./img/portfolio/weather/screenshot2.png" target="_blank"><img class ="modal-img" src="./img/portfolio/weather/screenshot2.png"></a>
+                  </div>
+
+                  <div class="mySlides2 fade">
+                    <div class="numbertext">Searching forecast for current location</div>
+                    <a href="./img/portfolio/weather/screenshot4.png" target="_blank"><img class ="modal-img" src="./img/portfolio/weather/screenshot4.png"></a>
+                  </div>
+
+                  <div class="mySlides2 fade">
+                    <div class="numbertext">Weather forecast for current location</div>
+                    <a href="./img/portfolio/weather/screenshot5.png" target="_blank"><img class ="modal-img" src="./img/portfolio/weather/screenshot5.png"></a>
+                  </div>
+
+                  <div class="mySlides2 fade">
+                    <div class="numbertext">Mobile phone view</div>
+                    <a href="./img/portfolio/weather/screenshot6.png" target="_blank"><img class ="modal-img" src="./img/portfolio/weather/screenshot6.png"></a>
+                  </div>
+
+                  <div class="mySlides2 fade">
+                    <div class="numbertext">Tablet view</div>
+                    <a href="./img/portfolio/weather/screenshot8.png" target="_blank"><img class ="modal-img" src="./img/portfolio/weather/screenshot8.png"></a>
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot2" onclick="currentSlide(1)"></span>
+                  <span class="dot2" onclick="currentSlide(2)"></span>
+                  <span class="dot2" onclick="currentSlide(3)"></span>
+                  <span class="dot2" onclick="currentSlide(4)"></span>
+                  <span class="dot2" onclick="currentSlide(5)"></span>
+                  <span class="dot2" onclick="currentSlide(6)"></span>
+                </div> 
+                <!-- END of Gallery -->
+
+                <p>
+                  This weather forecast application presents weather searched by a city name 
+                  or gets weather by a user's current location.
+                </p>
+
+                <button class="button" onclick="window.open('https://karolsz15.github.io/JS-weather-app/')">Live preview</button>
+                <button class="button" onclick="window.open('https://github.com/karolsz15/JS-weather-app')">Code</button>
+                <button class="button closemodal">Close Window</button>
+              </div>
+          </div> 
+
+          <!-- The Modal -->
+          <div id="myModal3" class="modal">
+          
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>PIG GAME</h1>
+
+                <!-- Gallery -->
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides3 fade">
+                    <img class ="modal-img" src="./img/portfolio/pig2.jpg">
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">Desktop view</div>
+                    <a href="./img/portfolio/pig/desktop1.png" target="_blank"><img class ="modal-img" src="./img/portfolio/pig/desktop1.png"></a>
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">Phone horizontal view</div>
+                    <a href="./img/portfolio/pig/phone-horizontal1.png" target="_blank"><img class ="modal-img" src="./img/portfolio/pig/phone-horizontal1.png"></a>
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">Phone vertical view</div>
+                    <a href="./img/portfolio/pig/phone-vertical1.png" target="_blank"><img class ="modal-img" src="./img/portfolio/pig/phone-vertical1.png"></a>
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">Tablet horizontal view</div>
+                    <a href="./img/portfolio/pig/tablet-horizontal2.png" target="_blank"><img class ="modal-img" src="./img/portfolio/pig/tablet-horizontal2.png"></a>
+                  </div>
+
+                  <div class="mySlides3 fade">
+                    <div class="numbertext">Tablet vertical view</div>
+                    <a href="./img/portfolio/pig/tablet-vertical3.png" target="_blank"><img class ="modal-img" src="./img/portfolio/pig/tablet-vertical3.png"></a>
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot3" onclick="currentSlide(1)"></span>
+                  <span class="dot3" onclick="currentSlide(2)"></span>
+                  <span class="dot3" onclick="currentSlide(3)"></span>
+                  <span class="dot3" onclick="currentSlide(4)"></span>
+                  <span class="dot3" onclick="currentSlide(5)"></span>
+                  <span class="dot3" onclick="currentSlide(6)"></span>
+                </div> 
+              <!-- END of Gallery -->
+
+              <p>
+                Game written in javascript. Event Listener methods were used to manipulate the DOM. 
+                User is allowed to see game rules, start a new game, roll the dices,
+                hold the current score and set the final score, after which the game is over.
+                I made many adjustments in the app to be fully responsive.
+                It works properly on tablets (e.g. iPad's screen resolition) and mobile phones (e.g. iPhone 6/7/8 screen resolutions).
+              </p>
+
+              <button class="button" onclick="window.open('https://karolsz15.github.io/JS-pig-game/')">Live preview</button>
+              <button class="button" onclick="window.open('https://github.com/karolsz15/JS-pig-game')">Code</button>
+              <button class="button closemodal">Close Window</button>
+            </div>
+          </div> 
+
+          <!-- The Modal -->
+          <div id="myModal4" class="modal">
+          
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>CONSOLE QUIZ</h1>
+
+              <!-- Gallery -->
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides4 fade">
+                    <img class ="modal-img" src="./img/portfolio/game2.png">
+                  </div>
+
+                  <div class="mySlides4 fade">
+                    <div class="numbertext">Homepage</div>
+                    <a href="./img/portfolio/quiz/quiz4.png" target="_blank"><img class ="modal-img" src="./img/portfolio/quiz/quiz4.png"></a>
+                  </div>
+
+                  <div class="mySlides4 fade">
+                    <div class="numbertext">Game rules and instructions</div>
+                    <a<img href="./img/portfolio/quiz/quiz0.png" target="_blank"><img class ="modal-img" src="./img/portfolio/quiz/quiz0.png"></a>
+                  </div>
+
+                  <div class="mySlides4 fade">
+                    <div class="numbertext">The console quiz game</div>
+                    <a href="./img/portfolio/quiz/quiz1.png" target="_blank"><img class ="modal-img" src="./img/portfolio/quiz/quiz1.png"></a>
+                  </div>
+
+                  <div class="mySlides4 fade">
+                    <div class="numbertext">Finishing the game</div>
+                    <a href="./img/portfolio/quiz/quiz2.png" target="_blank"><img class ="modal-img" src="./img/portfolio/quiz/quiz2.png"></a>
+                  </div>
+
+                  <div class="mySlides4 fade">
+                    <div class="numbertext">Game finished with final score presented</div>
+                    <a href="./img/portfolio/quiz/quiz3.png" target="_blank"><img class ="modal-img" src="./img/portfolio/quiz/quiz3.png"></a>
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot4" onclick="currentSlide(1)"></span>
+                  <span class="dot4" onclick="currentSlide(2)"></span>
+                  <span class="dot4" onclick="currentSlide(3)"></span>
+                  <span class="dot4" onclick="currentSlide(4)"></span>
+                  <span class="dot4" onclick="currentSlide(5)"></span>
+                  <span class="dot4" onclick="currentSlide(6)"></span>
+                </div> 
+              <!-- END of Gallery -->
+
+                <p>Simple console quiz is a game written in JavaScript.</p>
+                <p>
+                The game function from external script.js file is run after user presses the button. 
+                The questions were created using function constuctor. 
+                The game consists of ten different questions chosen randomly from a question array. 
+                </p>
+                <button class="button" onclick="window.open('https://karolsz15.github.io/JS-quiz/')">Live preview</button>
+                <button class="button" onclick="window.open('https://github.com/karolsz15/JS-quiz/')">Code</button>
+                <button class="button closemodal">Close Window</button>
+            </div>
+          </div> 
+
+          <!-- The Modal -->
+          <div id="myModal5" class="modal">
+          
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>MY PORTFOLIO</h1>
+    
+              <!-- Gallery -->
+              <!-- Slideshow container -->
+              <div class="slideshow-container">
+
+                  <!-- Full-width images with number and caption text -->
+                  <div class="mySlides5 fade">
+                    <img class ="modal-img" src="./img/portfolio/coding2.jpg">
+                  </div>
+
+                  <div class="mySlides5 fade">
+                    <div class="numbertext">Desktop view - popup modal</div>
+                    <a href="./img/portfolio/portfolio/desktop.png" target="_blank"><img class ="modal-img" src="./img/portfolio/portfolio/desktop.png"></a>
+                  </div>
+
+                  <div class="mySlides5 fade">
+                    <div class="numbertext">Tablet horizontal view</div>
+                    <a<img href="./img/portfolio/portfolio/tablet-horizontal.png" target="_blank"><img class ="modal-img" src="./img/portfolio/portfolio/tablet-horizontal.png"></a>
+                  </div>
+
+                  <div class="mySlides5 fade">
+                    <div class="numbertext">Tablet vertical view</div>
+                    <a href="./img/portfolio/portfolio/tablet-vertical.png" target="_blank"><img class ="modal-img" src="./img/portfolio/portfolio/tablet-vertical.png"></a>
+                  </div>
+
+                  <div class="mySlides5 fade">
+                    <div class="numbertext">Phone horizontal view</div>
+                    <a href="./img/portfolio/portfolio/phone-horizontal.png" target="_blank"><img class ="modal-img" src="./img/portfolio/portfolio/phone-horizontal.png"></a>
+                  </div>
+
+                  <div class="mySlides5 fade">
+                    <div class="numbertext">Phone vertical view</div>
+                    <a href="./img/portfolio/portfolio/phone-vertical.png" target="_blank"><img class ="modal-img" src="./img/portfolio/portfolio/phone-vertical.png"></a>
+                  </div>
+
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot5" onclick="currentSlide(1)"></span>
+                  <span class="dot5" onclick="currentSlide(2)"></span>
+                  <span class="dot5" onclick="currentSlide(3)"></span>
+                  <span class="dot5" onclick="currentSlide(4)"></span>
+                  <span class="dot5" onclick="currentSlide(5)"></span>
+                  <span class="dot5" onclick="currentSlide(6)"></span>
+                </div> 
+              <!-- END of Gallery -->
+
+              <p>
+              My portfolio website containing all project I have made. 
+              I used many techniques to provide good user experience, e.g. calm colours and design, flexbox, 
+              popup modal galleries (with screenshots and describtions of the projects), jQuery smooth effects 
+              to scroll the page and to change size of the navigation bar. The page is fully responsive, it 
+              works properly on tablets and mobile phones.
+              </p>
+
+              <button class="button" onclick="window.open('https://karolsz15.github.io/portfolio/')">Live preview</button>
+              <button class="button" onclick="window.open('https://github.com/karolsz15/portfolio/')">Code</button>
+              <button class="button closemodal">Close Window</button>
+            </div>
+        </div> 
+
+        <!-- ABOUT -->
+        <div class="about" id="about">
+
+          <div class="about-header">
+              <i class="fas fa-code"></i>
+                    ABOUT ME
+              <i class="fas fa-code"></i>
+          </div>
+          
+          <div class="about-details">
+              <img class="bigfoto" src="img/bigfoto3.jpg" alt="face picture">
+              <div class="about-details-text">
+                  <p>Hello, my name is Karol Szpek!</p>
+                  <p>I'm a self-taught junior frontend developer, located in Cracow, Poland.</p>
+                  <p>I have graduated from Energy Engineering at Cracow University of Technology, 
+                  but decided to switch my carrer path to thing I really enjoy - web development.</p>
+                  <p>I have tried many activities during my entire life. This icludes tennis, mixed martial arts, breakdancing, horseriding, chess and many many more. But the biggest 
+                  hobby of my life is the game of texas hold'em poker.</p>
+                  <p>I have won two local tournaments in Cracow, and have participated in six international tournaments so far.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- CONTACT-->
+    <div class="contact" id="contact">
+
+        <div class="contact-header">
+            <i class="fas fa-code"></i>
+                FIND ME HERE
+            <i class="fas fa-code"></i>
+        </div>
+
+        <div class="contact-items">
+              <span class="location"><i class="btn-social fas fa-map-marker-alt"></i><span>Kraków, PL</span></span>
+
+              <a class="btn-social" href="https://www.linkedin.com/in/karol-szpek/">
+                <i class="fab fa-fw fa-linkedin-in"></i>
+              </a>
+
+              <a class="btn-social" href="https://github.com/karolsz15">
+                <i class="fab fa-fw fa-github"></i>
+              </a>
+
+              <a class="btn-social" href="mailto:szpek.karol@gmail.com">
+                <i class="fas fa-envelope"></i>
+              </a>
+        </div>
+    </div>
+
+    <div class="footer" id="footer">
+        Copyright &copy; Karol Szpek 2020
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
