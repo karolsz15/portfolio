@@ -146,16 +146,12 @@ transition: all 0.2s ease-in-out;
 .about-details {
   display: flex;
   flex-direction: row;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: justify;
-  margin: auto;
 }
 
 .about-details-text {
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
 }
 
 .bigfoto {
