@@ -61,6 +61,7 @@ a {
 }
 
 .btn {
+  /* border: solid 0.1rem var(--third); */
   background-color: var(--third);
   border-radius: 0.1rem;
   padding: 0.2rem;
@@ -146,7 +147,7 @@ transition: all 0.2s ease-in-out;
 .about-details {
   display: flex;
   flex-direction: row;
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: justify;
 }
 
