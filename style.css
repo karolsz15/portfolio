@@ -148,7 +148,8 @@ transition: all 0.2s ease-in-out;
   flex-direction: row;
   font-size: 1.5em;
   text-align: justify;
-  padding: auto;
+  padding-top: auto;
+  padding-bottom: auto;
 }
 
 .about-details-text {
