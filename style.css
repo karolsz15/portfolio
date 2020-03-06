@@ -153,6 +153,7 @@ transition: all 0.2s ease-in-out;
 
 .about-details-text {
   padding: 1em;
+  margin: auto;
 }
 
 .bigfoto {
