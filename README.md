@@ -6,8 +6,17 @@ to scroll the page and to change size of the navigation bar.
 
 The page is fully responsive, it works properly on tablets and mobile phones.
 
+1. Popup gallery modal - desktop view
 ![Alt text](img/portfolio/portfolio/desktop.png?raw=true "Popup gallery modal - desktop view")
+
+2. Projects - tablet horizontal view
 ![Alt text](img/portfolio/portfolio/tablet-horizontal.png?raw=true "Projects - tablet horizontal view")
+
+3. Projects - tablet vertical view
 ![Alt text](img/portfolio/portfolio/tablet-vertical.png?raw=true "Projects - tablet vertical view")
+
+4. Contact info - mobile phone horizontal view
 ![Alt text](img/portfolio/portfolio/phone-horizontal.png?raw=true "Contact info - mobile phone horizontal view")
+
+5. Contact info - mobile phone vertical view
 ![Alt text](img/portfolio/portfolio/phone-vertical.png?raw=true "Contact info - mobile phone vertical view")
