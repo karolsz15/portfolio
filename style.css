@@ -419,8 +419,9 @@ p{
   }
 
   .about-details {
+    display: flex;
+    flex-direction: row;
     font-size: 1.3em;
-    margin: auto;
   }
 }
 /* TABLET VERTICAL */
@@ -454,6 +455,7 @@ p{
   }
 
   .about-details {
+    display: flex;
     flex-direction: column;
     font-size: 1.5em;
   }
