@@ -374,7 +374,7 @@ p{
 }
 
 /* TABLET HORIZONTAL */
-@media(max-width:1280px) {
+@media(max-width:1200px) {
 
   .header {
     font-size: 3em;
@@ -423,7 +423,7 @@ p{
   }
 }
 /* TABLET VERTICAL */
-@media(max-width:1020px) {
+@media(max-width:992px) {
   .row {
     display: inline-block;
     margin: 0;
@@ -465,7 +465,7 @@ p{
 }
 /* PHONE HORIZONTAL */
 
-@media(max-width:750px) {
+@media(max-width:768px) {
 
   h1, h2{
     font-size: 1em;
@@ -533,7 +533,7 @@ p{
 }
 
 /* PHONE VERTICAL ******************************************************/
-@media(max-width:480px) {
+@media(max-width:576px) {
 
   .about-details {
     display: flex;
