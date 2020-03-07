@@ -423,7 +423,7 @@ p{
   }
 }
 /* TABLET VERTICAL */
-@media(max-width:1024px) {
+@media(max-width:1020px) {
   .row {
     display: inline-block;
     margin: 0;
