@@ -146,11 +146,11 @@ transition: all 0.2s ease-in-out;
 .about-details {
   display: flex;
   flex-direction: row;
-  font-size: 2em;
   text-align: justify;
 }
 
 .about-details-text {
+  font-size: 2em;
   padding: 1em;
 }
 
@@ -419,9 +419,7 @@ p{
   }
 
   .about-details {
-    display: flex;
-    flex-direction: row;
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 /* TABLET VERTICAL */
@@ -457,6 +455,9 @@ p{
   .about-details {
     display: flex;
     flex-direction: column;
+  }
+
+  .about-details-text {
     font-size: 1.5em;
   }
   
