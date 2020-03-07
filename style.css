@@ -469,7 +469,7 @@ p{
 }
 /* PHONE HORIZONTAL */
 
-@media(max-width:768px) {
+@media(max-width:760px) {
 
   h1, h2{
     font-size: 1em;
