@@ -418,8 +418,8 @@ p{
     min-height: 60vh;
   }
 
-  .about-details {
-    font-size: 1em;
+  .about-details-text {
+    font-size: 1.5em;
   }
 }
 /* TABLET VERTICAL */
@@ -456,13 +456,10 @@ p{
     display: flex;
     flex-direction: column;
   }
-
-  .about-details-text {
-    font-size: 1.5em;
-  }
   
   .bigfoto {
     min-height: 30vh;
+    max-height: 30vh;
   }
 
 }
@@ -507,11 +504,11 @@ p{
   .about-details {
     display: flex;
     flex-direction: row;
-    font-size: 0.95em;
     padding: 1em;
   }
   
   .about-details-text {
+    font-size: 1em;
     padding: 0.2em;
   }
   
@@ -543,10 +540,6 @@ p{
     flex-direction: column;
     font-size: 0.9em;
     padding: 1em;
-  }
-  
-  .about-details-text {
-    padding: 0.2em;
   }
   
   .bigfoto {
