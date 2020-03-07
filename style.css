@@ -462,6 +462,10 @@ p{
     max-height: 30vh;
   }
 
+  .about-details-text {
+    font-size: 1.3em;
+  }
+
 }
 /* PHONE HORIZONTAL */
 
