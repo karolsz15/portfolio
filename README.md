@@ -13,10 +13,10 @@ The page is fully responsive, it works properly on tablets and mobile phones.
 ![Alt text](img/portfolio/portfolio/tablet-horizontal.png?raw=true "Projects - tablet horizontal view")
 
 3. Projects - tablet portrait view
-<img src="img/portfolio/portfolio/tablet-vertical.png" alt="Projects - tablet vertical view" width="50%"/>
+<img src="img/portfolio/portfolio/tablet-vertical.png" alt="Projects - tablet vertical view" width="70%"/>
 
 4. Contact info - mobile phone landscape view
-<img src="img/portfolio/portfolio/phone-horizontal.png" alt="Contact info - mobile phone horizontal view" width="30%"/>
+<img src="img/portfolio/portfolio/phone-horizontal.png" alt="Contact info - mobile phone horizontal view" height="30%"/>
 
 5. Contact info - mobile phone portrait view
 <img src="img/portfolio/portfolio/phone-vertical.png" alt="Contact info - mobile phone vertical view" width="30%"/>
