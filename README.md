@@ -16,7 +16,7 @@ The page is fully responsive, it works properly on tablets and mobile phones.
 <img src="img/portfolio/portfolio/tablet-vertical.png" alt="Projects - tablet vertical view" width="70%"/>
 
 4. Contact info - mobile phone landscape view
-<img src="img/portfolio/portfolio/phone-horizontal.png" alt="Contact info - mobile phone horizontal view" height="30%"/>
+<img src="img/portfolio/portfolio/phone-horizontal.png" alt="Contact info - mobile phone horizontal view" width="50%"/>
 
 5. Contact info - mobile phone portrait view
 <img src="img/portfolio/portfolio/phone-vertical.png" alt="Contact info - mobile phone vertical view" width="30%"/>
