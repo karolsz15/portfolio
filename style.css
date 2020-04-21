@@ -169,7 +169,7 @@ transition: all 0.2s ease-in-out;
   background-color: white;
   color: black;
   min-height: 100vh;
-  padding: 0 10vw;
+  padding: 0 5vw;
 }
 
 .portfolio-item {
@@ -503,10 +503,10 @@ p{
   }
 
   .modal-content {
-    margin: auto;
+    margin: 5vh auto;
     padding: 1em;
-    width: 90%;
-    min-height: 95%;
+    width: 90vw;
+    min-height: 90vh;
     font-size: 0.9em;
   }
   
@@ -533,7 +533,7 @@ p{
 
   .button {
     font-size: 1em;
-    min-width: 120px;
+    min-width: 25vw;
     min-height: 40px;
   }
 
