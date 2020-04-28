@@ -55,7 +55,7 @@ a {
 
   opacity: 0;
   animation: navbar;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -182,19 +182,6 @@ transition: all 0.2s ease-in-out;
   padding: 0 5vw;
 }
 
-.start {
-  animation: fade-in;
-  animation-duration: 2s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fade-in {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-
 .portfolio-item {
   display: flex;
   flex-direction: column;
@@ -254,14 +241,9 @@ min-width: 100%;
     min-height: 100vh;
 
     opacity: 0;
-    animation: header;
-    animation-duration: 2s;
+    animation: navbar;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
-}
-
-@keyframes header {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
 }
 
 h1{
@@ -390,24 +372,6 @@ p{
 
 .active, .dot:hover {
   background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
 
 /* TABLET HORIZONTAL */
