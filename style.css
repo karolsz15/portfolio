@@ -179,7 +179,7 @@ transition: all 0.2s ease-in-out;
   background-color: white;
   color: black;
   min-height: 100vh;
-  padding: 0 5vw;
+  padding: 1rem 5vw;
 }
 
 .portfolio-item {
@@ -359,7 +359,7 @@ p{
 }
 
 /* The dots/bullets/indicators */
-.dot1, .dot2, .dot3, .dot4, .dot5 {
+.dot1, .dot2, .dot3, .dot4, .dot5, .dot6 {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -387,7 +387,7 @@ p{
 
   .portfolio-grid {
     grid-gap: 2rem;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 
   .modal-img {
@@ -484,7 +484,7 @@ p{
 
   .portfolio-grid {
     grid-gap: 1rem;
-    padding: 0 .5rem;
+    padding: .5rem;
   }
 
   .slideshow-container {

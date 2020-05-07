@@ -199,7 +199,6 @@ function showSlides(n) {
   const dots5 = document.getElementsByClassName("dot5");
   const dots6 = document.getElementsByClassName("dot6");
 
-
   if (n > slides1.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides1.length}
 
@@ -238,7 +237,7 @@ function showSlides(n) {
   }
 
   for (i = 0; i < dots1.length; i++) {
-      dots1[i].className = dots1[i].className.replace(" active", "");
+    dots1[i].className = dots1[i].className.replace(" active", "");
   }
   for (i = 0; i < dots2.length; i++) {
     dots2[i].className = dots2[i].className.replace(" active", "");
@@ -263,7 +262,6 @@ function showSlides(n) {
   slides5[slideIndex-1].style.display = "block";
   slides6[slideIndex-1].style.display = "block";
 
-
   //Toggle the dots indicators
   dots1[slideIndex-1].className += " active";
   dots2[slideIndex-1].className += " active";
@@ -271,6 +269,19 @@ function showSlides(n) {
   dots4[slideIndex-1].className += " active";
   dots5[slideIndex-1].className += " active";
   dots6[slideIndex-1].className += " active";
-
 }
-  
+
+function isElementInViewport(elem) {
+  var $elem = $(elem);
+
+  // Get the scroll position of the page.
+  var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+  var viewportTop = $(scrollElem).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  // Get the position of the element on the page.
+  var elemTop = Math.round( $elem.offset().top );
+  var elemBottom = elemTop + $elem.height();
+
+  return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+}
