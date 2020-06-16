@@ -1,3 +1,5 @@
+LIVE: https://karolsz15.github.io/portfolio/
+
 My portfolio website containing all project I have made. 
 
 I used many techniques to provide good user experience, e.g. calm colours and design, flexbox, 
