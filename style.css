@@ -530,8 +530,31 @@ p{
   
 }
 
-/* PHONE HORIZONTAL */
 
+/* PHONES WITH LARGE SCREENS HORIZONTAL */
+@media(max-width:992px) and (max-height: 450px) {
+  .header {
+    background-image: url(./img/logo4.png);
+    background-size: 50%;
+    font-size: 2.3rem;
+  }
+
+  .about-details {
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+    font-size: 0.7em;
+  }
+
+  .bigfoto {
+    border-radius: 1em;
+    margin: auto;
+    min-height: 70vh;
+  }
+
+}
+
+/* PHONE HORIZONTAL */
 @media(max-width:760px) {
 
   h1, h2{
