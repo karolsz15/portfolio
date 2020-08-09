@@ -141,20 +141,6 @@ window.onclick = function(event) {
   }
 } 
 
-//jQuery SMOOTH SCROLLING ANIMATION
-
-$('a[href*="#"]').on('click', function(e) {
-  e.preventDefault()
-
-  $('html, body').animate(
-    {
-      scrollTop: $($(this).attr('href')).offset().top,
-    },
-    800,
-    'linear'
-  )
-})
-
 // When the user scrolls down 30px from the top of the document, resize the navbar's padding and the logo's font size
 window.onscroll = function() {scrollFunction()};
 
@@ -271,17 +257,23 @@ function showSlides(n) {
   dots6[slideIndex-1].className += " active";
 }
 
-function isElementInViewport(elem) {
-  var $elem = $(elem);
+//SECTIONS SLIDE IN with GSAP
+gsap.registerPlugin(ScrollTrigger);
 
-  // Get the scroll position of the page.
-  var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-  var viewportTop = $(scrollElem).scrollTop();
-  var viewportBottom = viewportTop + $(window).height();
+const sections = document.querySelectorAll('section');
 
-  // Get the position of the element on the page.
-  var elemTop = Math.round( $elem.offset().top );
-  var elemBottom = elemTop + $elem.height();
+sections.forEach(section => {
+  gsap.fromTo(section.children, {y: '+=100', opacity: 0}, {y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'easeInOut', scrollTrigger: {
+  trigger: section,
+  start: 'top 20%',
+}});  
+});
 
-  return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
-}
+//scroll to sections with GSAP
+gsap.registerPlugin(ScrollToPlugin);
+
+document.querySelectorAll(".navbar a").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    gsap.to(window, {duration: 1, scrollTo:{y:"#section" + (index + 1), offsetY:0}});
+  });
+});

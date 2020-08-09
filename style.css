@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -23,6 +24,16 @@ body {
   font-size:1rem;
   padding:0px;
   margin:0px;
+}
+
+/* GSAP slide-in animation bug workaround */
+section {
+  --moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 a {
@@ -37,6 +48,7 @@ a {
 }
 
 .navbar {
+  font-family: 'Rock Salt', cursive;
   position: fixed;
   display: flex;
   flex-wrap: nowrap;
@@ -126,9 +138,10 @@ a:hover {
 }
 
 .footer {
+  font-family: 'Rock Salt', cursive;
   padding: 0.5em;
   font-size: 1em;
-  font-weight: 900;
+  font-weight: 600;
   text-align: center;
   background-color: var(--secondary);
   color: var(--third);
@@ -150,15 +163,16 @@ transition: all 0.2s ease-in-out;
 }
 
 .about {
+  color: var(--dark);
   display: flex;
   flex-direction: column;
   padding: 0 20vw;
   background-color: #E1F6F4;
-  color: #7DB9B3;
   min-height: 100vh;
 }
 
 .about-details {
+  color: var(--dark);
   display: flex;
   flex-direction: row;
   text-align: justify;
@@ -190,13 +204,32 @@ transition: all 0.2s ease-in-out;
   font-size: 1.5rem;
 }
 
-.projects-header, .about-header, .contact-header {
+.projects-header, .about-header {
 padding: 1.2em 0 0;
 display: flex;
 justify-content: center;
 align-items: center;
 font-size: 2em;
 min-width: 100%;
+}
+
+.about-header {
+  color: var(--dark);
+}
+
+.contact-header {
+  padding: 1.2em 0 0.6em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  min-width: 100%;
+  }
+
+.contact-subheader {
+  font-size: .3em;
+  margin: .1em;
 }
 
 .button {
@@ -221,8 +254,8 @@ min-width: 100%;
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 4rem;
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
+  grid-gap: 1rem;
   justify-content: center;
   padding: 0 4rem;
 }
@@ -233,17 +266,36 @@ min-width: 100%;
 }
 
 .header{
+    font-family: 'Rock Salt', cursive;
+    font-size: 4rem;
+    color: var(--dark);
+    padding: 1rem;
+
     background-color: #E1F6F4;
-    background-image: url(./img/logo2.png);
-    background-position: center;
+    background-image: url(./img/logo3.png);
+    background-position: left;
     background-repeat: no-repeat;
     background-size: auto;
     min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
 
     opacity: 0;
     animation: navbar;
     animation-duration: 3s;
     animation-fill-mode: forwards;
+}
+
+.first_line {
+  padding: 0.05px;
+}
+
+.header_text {
+  margin: 2rem;
+  margin-top: 0;
 }
 
 h1{
@@ -386,7 +438,7 @@ p{
   }
 
   .portfolio-grid {
-    grid-gap: 2rem;
+    grid-gap: .5rem;
     padding: 1rem;
   }
 
@@ -424,8 +476,22 @@ p{
     font-size: 6.5em;
   }
 }
+
 /* TABLET VERTICAL */
 @media(max-width:992px) {
+
+  .header{
+    font-size: 2.5rem;
+    background-size: 100%;
+  }
+
+.header_text {
+  margin: 1rem;
+}
+
+.portfolio-grid {
+  grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+}
 
   .modal-img {
     max-width: 90%;
@@ -474,17 +540,18 @@ p{
   }
 
   .header{
+    font-size: 2rem;
     background-color: #E1F6F4;
-    background-image: url(./img/logo1.png);
-    background-position: center;
+    background-image: url(./img/logo4.png);
+    background-position: left;
     background-repeat: no-repeat;
     background-size: auto;
     min-height: 100vh;
   }
 
   .portfolio-grid {
-    grid-gap: 1rem;
-    padding: .5rem;
+    grid-gap: .5rem;
+    padding: 1rem;
   }
 
   .slideshow-container {
@@ -545,8 +612,27 @@ p{
   }
 }
 
-/* PHONE VERTICAL ******************************************************/
+/* PHONE VERTICAL */
 @media(max-width:576px) {
+
+  .header {
+    
+    justify-content: space-between;
+    align-content: flex-end;
+  }
+
+  .first_line {
+    margin-top: 10vh;
+  }
+
+  .second_line {
+    margin-bottom: 12vh;
+    text-align: right;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: minmax(0,1fr);
+  }
 
   .about-details {
     display: flex;
@@ -573,5 +659,10 @@ p{
 
   .modal-img {
     max-height: 300px;
+  }
+
+  .footer {
+    font-size: 0.8rem;
+    padding: 0.5em 0;
   }
 }
