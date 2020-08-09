@@ -552,6 +552,36 @@ p{
     min-height: 70vh;
   }
 
+  .contact-items {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portfolio-grid {
+    grid-gap: .5rem;
+    padding: 1rem;
+  }
+
+  .slideshow-container {
+    min-height: 0;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+
+  .modal-content {
+    margin: .5vh auto;
+    padding: 1em;
+    width: 90vw;
+    min-height: 90vh;
+    font-size: 0.9em;
+  }
+  
+  .modal-img {
+    max-height: 150px;
+  }
+
 }
 
 /* PHONE HORIZONTAL */
