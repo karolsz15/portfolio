@@ -478,7 +478,7 @@ p{
 }
 
 /* TABLET VERTICAL */
-@media(max-width:992px) {
+@media(max-width:992px) and (min-height: 451px) {
 
   .header{
     font-size: 2.5rem;
@@ -558,8 +558,9 @@ p{
   }
 
   .portfolio-grid {
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
     grid-gap: .5rem;
-    padding: 1rem;
+    padding: .5rem;
   }
 
   .slideshow-container {
@@ -569,17 +570,15 @@ p{
   .mobile-hidden {
     display: none;
   }
-
-  .modal-content {
-    margin: .5vh auto;
-    padding: 1em;
-    width: 90vw;
-    min-height: 90vh;
-    font-size: 0.9em;
-  }
   
   .modal-img {
     max-height: 150px;
+  }
+
+  .button {
+    font-size: 1em;
+    min-width: 15vw;
+    min-height: 40px;
   }
 
 }
@@ -603,8 +602,9 @@ p{
   }
 
   .portfolio-grid {
-    grid-gap: .5rem;
-    padding: 1rem;
+    grid-template-columns: minmax(0,1fr) minmax(0,1fr);
+    grid-gap: 2rem;
+    padding: 2em;
   }
 
   .slideshow-container {
@@ -619,7 +619,7 @@ p{
     margin: 5vh auto;
     padding: 1em;
     width: 90vw;
-    min-height: 90vh;
+    max-height: 90vh;
     font-size: 0.9em;
   }
   
@@ -669,7 +669,6 @@ p{
 @media(max-width:576px) {
 
   .header {
-    
     justify-content: space-between;
     align-content: flex-end;
   }
@@ -679,12 +678,13 @@ p{
   }
 
   .second_line {
-    margin-bottom: 12vh;
+    margin-bottom: 10vh;
     text-align: right;
   }
 
   .portfolio-grid {
     grid-template-columns: minmax(0,1fr);
+    padding: .25rem;
   }
 
   .about-details {
@@ -704,6 +704,14 @@ p{
   .contact-items {
     display: flex;
     flex-direction: column;
+  }
+
+  .modal-content {
+    margin: 15vh auto;
+    padding: 1em;
+    width: 90vw;
+    min-height: 70vh;
+    font-size: 0.9em;
   }
 
   .slideshow-container {
