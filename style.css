@@ -665,6 +665,17 @@ p{
   }
 }
 
+/* PHONE VERTICAL FOR LARGE SCREENS */
+@media(max-width:576px) and (min-height: 700px) {
+  .modal-content {
+    margin: 15vh auto;
+    padding: 1em;
+    width: 90vw;
+    min-height: 70vh;
+    font-size: 0.9em;
+  }
+}
+
 /* PHONE VERTICAL */
 @media(max-width:576px) {
 
@@ -679,7 +690,7 @@ p{
   }
 
   .second_line {
-    margin-bottom: 12vh;
+    margin-bottom: 8vh;
     text-align: right;
   }
 
@@ -709,6 +720,7 @@ p{
   .slideshow-container {
     min-height: 320px;
   }
+  
 
   .modal-img {
     max-height: 300px;
