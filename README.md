@@ -1,25 +1,27 @@
-LIVE: https://karolsz15.github.io/portfolio/
+# My portfolio website
 
-My portfolio website containing all project I have made. 
+## 1. LIVE DEMO: https://karolsz15.github.io/portfolio/
 
-I used many techniques to provide good user experience, e.g. calm colours and design, flexbox, 
+## 2. DESCRIPTION
+
+My portfolio website containing all project I have made. I used many techniques to provide good user experience, e.g. calm colours and design, flexbox, 
 popup modal galleries (with screenshots and describtions of the projects), jQuery smooth effects 
-to scroll the page and to change size of the navigation bar. 
-
+to scroll the page and to change size of the navigation bar.
 The page is fully responsive, it works properly on tablets and mobile phones.
 
-1. Popup gallery modal - desktop view
-![Alt text](img/portfolio/portfolio/desktop.png?raw=true "Popup gallery modal - desktop view")
+## 3. SCREENSHOTS:
 
-2. Projects - tablet landscape view
-![Alt text](img/portfolio/portfolio/tablet-horizontal.png?raw=true "Projects - tablet horizontal view")
+### 1. Popup gallery modal - desktop view
+![Alt text](img/portfolio/portfolio/desktop.png?raw=true "Popup gallery modal - desktop view") <hr/>
 
-3. Projects - tablet portrait view
-<img src="img/portfolio/portfolio/tablet-vertical.png" alt="Projects - tablet vertical view" width="70%"/>
+### 2. Projects - tablet horizontal view
+![Alt text](img/portfolio/portfolio/tablet-horizontal.png?raw=true "Projects - tablet horizontal view") <hr/>
 
-4. Contact info - mobile phone landscape view
-<img src="img/portfolio/portfolio/phone-horizontal.png" alt="Contact info - mobile phone horizontal view" width="50%"/>
+### 3. Projects - tablet vertical view
+![Alt text](img/portfolio/portfolio/tablet-vertical.png?raw=true "Projects - tablet vertical view") <hr/>
 
-5. Contact info - mobile phone portrait view
-<img src="img/portfolio/portfolio/phone-vertical.png" alt="Contact info - mobile phone vertical view" width="30%"/>
+### 4. Contact info - mobile phone horizontal view
+![Alt text](img/portfolio/portfolio/phone-horizontal.png?raw=true "Contact info - mobile phone horizontal view") <hr/>
 
+### 5. Contact info - mobile phone vertical view
+![Alt text](img/portfolio/portfolio/phone-vertical.png?raw=true "Contact info - mobile phone vertical view") <hr/>
