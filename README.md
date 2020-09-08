@@ -4,8 +4,7 @@
 
 ## 2. DESCRIPTION
 
-My portfolio website containing all project I have made. I used many techniques to provide good user experience, e.g. calm colours and design, flexbox, 
-popup modal galleries (with screenshots and describtions of the projects), jQuery smooth effects 
+My portfolio website containing all project I have made. I used many techniques to provide good user experience, e.g. calm colours and design, flexbox, CSS grid, popup modal galleries (with screenshots and describtions of the projects), GSAP smooth effects 
 to scroll the page and to change size of the navigation bar.
 The page is fully responsive, it works properly on tablets and mobile phones.
 
