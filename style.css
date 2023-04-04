@@ -186,7 +186,7 @@ transition: all 0.2s ease-in-out;
 .bigfoto {
   border-radius: 5em;
   margin: auto;
-  min-height: 70vh;
+  max-height: 70vh;
   }
 
 .projects {
@@ -465,7 +465,7 @@ p{
   }
 
   .bigfoto {
-    min-height: 60vh;
+    max-height: 60vh;
   }
 
   .about-details-text {
@@ -520,7 +520,6 @@ p{
   }
   
   .bigfoto {
-    min-height: 40vh;
     max-height: 40vh;
   }
 
@@ -549,7 +548,7 @@ p{
   .bigfoto {
     border-radius: 1em;
     margin: auto;
-    min-height: 70vh;
+    max-height: 70vh;
   }
 
   .contact-items {
@@ -641,7 +640,7 @@ p{
   .bigfoto {
     border-radius: 2em;
     margin: auto;
-    min-height: 60vh;
+    max-height: 60vh;
   }
 
   .button {
@@ -708,7 +707,6 @@ p{
   .bigfoto {
     border-radius: 1em;
     margin: auto;
-    min-height: 40vh;
     max-height: 40vh;
   }
 
